@@ -12,7 +12,7 @@ You will need GNU Octave and two additional packages, to run the scripts:
 - https://octave.sourceforge.io/symbolic/
 
 ## Notes
-You can also use Matlab to run the scripts. You need to slightly modify them however. Delete "pkg load control" and "pkg load symbolic" from [main.m](https://github.com/PatrickSuhm/LqrControlTutorialOctave/blob/master/main.m) and [deriveOde.m](https://github.com/PatrickSuhm/LqrControlTutorialOctave/blob/master/deriveOde.m) since Matlab doesn't know these commands.
+You can also use Matlab to run the scripts. You need to slightly modify them, however. Delete "pkg load control" in [main.m](https://github.com/PatrickSuhm/LqrControlTutorialOctave/blob/master/main.m) and "pkg load symbolic" in [deriveOde.m](https://github.com/PatrickSuhm/LqrControlTutorialOctave/blob/master/deriveOde.m), since Matlab doesn't know these commands.
 
 ### Author
 Patrick Suhm
