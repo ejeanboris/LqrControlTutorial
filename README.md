@@ -3,7 +3,11 @@ This repository contains the code for the following Youtube tutorial:
 - https://www.youtube.com/watch?v=KqdP0DVZ-lQ
 
 ## Getting Started
-Run the script [main.m](https://github.com/PatrickSuhm/LqrControlTutorialOctave/blob/master/main.m) to start the simulation and the script [deriveOde.m](https://github.com/PatrickSuhm/LqrControlTutorialOctave/blob/master/deriveOde.m) to symbolically calculate the system equations of motion.
+Run the script [main.m](https://github.com/PatrickSuhm/LqrControlTutorialOctave/blob/master/main.m) to start the simulation and the script [deriveOde.m](https://github.com/PatrickSuhm/LqrControlTutorialOctave/blob/master/deriveOde.m) to symbolically calculate the system equations of motion.  
+References used in the Tutorial:  
+- https://en.wikipedia.org/wiki/Inverted_pendulum
+- https://en.wikipedia.org/wiki/Optimal_control
+- http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.622.6114
 
 ## Prerequisites
 You will need GNU Octave and two additional packages, to run the scripts:
