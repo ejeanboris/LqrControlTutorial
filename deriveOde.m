@@ -75,11 +75,11 @@ p2ddCode=char(q2dd)
 statevector=[q1; q1d; q2; q2d];
 f=[q1d; q1dd; q2d; q2dd];         
 
-%compute the jacobians
+% compute the jacobians
 A=jacobian(f,statevector);                   
 B=jacobian(f,u);
 
-%evaluate jacobians at fixpoint = [0 0 0 0]
+% evaluate jacobians at fixpoint = [0 0 0 0]
 A_=subs(A,[q1,q1d, q2,q2d],[0,0,0,0])        
 B_=subs(B,[q1,q1d, q2,q2d],[0,0,0,0])
 
