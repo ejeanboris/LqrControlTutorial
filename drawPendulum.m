@@ -59,7 +59,7 @@ for k=1:length(t)
   
 end
 
-##figure
-##plot(diff(t3));
-##legend('plot time');
+%figure
+%plot(diff(t3));
+%legend('plot time');
 %close all
