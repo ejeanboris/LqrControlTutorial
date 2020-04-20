@@ -4,9 +4,9 @@ clc
 pkg load control
 
 % parameterization
-m1 = 1;          % mass of the cart
-m2 = 0.5;        % mass of the pole
-l = 0.7;         % length of the pole
+m1 = 0.571;          % mass of the cart
+m2 = 0.230;        % mass of the pole
+l = 0.64;         % length of the pole
 g = 9.81;        % earth gravity
 d1 = 1;          % viscous friction on the cart 
 
