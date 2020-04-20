@@ -25,9 +25,9 @@ eig(A);
 rank(ctrb(A,B));
 
 % weight matrices for the optimization problem
-Q = [1 0 0 0;   % x_ = [x x_d theta theta_d]
+Q = [100 0 0 0;   % x_ = [x x_d theta theta_d]
       0 1 0 0;
-      0 0 1 0;
+      0 0 1000 0;
       0 0 0 1];
 R = 0.0001;
 
