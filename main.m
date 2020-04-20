@@ -4,9 +4,9 @@ clc
 pkg load control
 
 % parameterization
-m1 = 1;          % mass of the cart
-m2 = 0.5;        % mass of the pole
-l = 0.7;         % length of the pole
+m1 = 0.571;          % mass of the cart
+m2 = 0.230;        % mass of the pole
+l = 0.64;         % length of the pole
 g = 9.81;        % earth gravity
 d1 = 1;          % viscous friction on the cart 
 
@@ -25,15 +25,15 @@ eig(A);
 rank(ctrb(A,B));
 
 % weight matrices for the optimization problem
-Q = [100 0 0 0;   % x_ = [x x_d theta theta_d]
+Q = [1 0 0 0;   % x_ = [x x_d theta theta_d]
       0 1 0 0;
-      0 0 1000 0;
+      0 0 1 0;
       0 0 0 1];
 R = 0.0001;
 
 % solve algebraic Riccati equation to obtain gain vector 
-%K = lqr(A,B,Q,R);
-K = [-1000.00   -946.79   4353.27    803.53];
+K = lqr(A,B,Q,R);
+%K = [-1000.00   -946.79   4353.27    803.53];
 
 % create time vector
 tspan = 0:0.01:15;
